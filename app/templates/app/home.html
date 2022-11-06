@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio familia</title>
+</head>
+<body>
+
+    <h1 style="color:orangered">Esta es mi pagina de familia</h1>
+
+    <p style="color:red">Lista de familiares:</p>
+
+    <div class="familiares">
+        {% for p in familiares %}
+
+        <div class="familia">
+            <ul>
+                <li>
+                    <div class="lista_familia">
+
+
+                    
+                        <h2>Nombre: {{ p.nombre }}</h2>
+                        <h3>Relacion: {{ p.relacion }}</h3>
+                        <h4>Edad: {{ p.edad }}</h4>
+                        <h5>Fecha de nacimiento: {{ p.fecha_nacimiento }}</h5>
+                    
+                    </div>
+
+                </li>
+
+
+            </ul>
+
+
+        </div>
+        {% endfor %}
+
+
+    </div>
+    
+    
+</body>
+</html>
